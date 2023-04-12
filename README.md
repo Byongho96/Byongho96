@@ -27,11 +27,10 @@
 - **SCCS**
   - The integrated platform for coding tests and online studies, made with Spring and React
   - [SCCS Website Link](https://sccs.kr)
-  - [SCCS Github Repository (Private Now)](https://github.com/Byongho96/SCCS)
+  - [SCCS Github Repository](https://github.com/Byongho96/SCCS)
 - **doEng**
   - The participatory  English storytelling service
-  - [SCCS Github Repository (Private Now)](https://github.com/Byongho96/doEng)
-  - 
+  - [doEng Github Repository](https://github.com/Byongho96/doEng)
 <!-- ### Education
 * **Korea University**
   * First Major in Civil, Enviromental and Architectural Engineering
