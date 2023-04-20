@@ -19,7 +19,7 @@
   - [Goolge Play Store Link](https://play.google.com/store/apps/details?id=com.DefaultCompany.BattlewithFriends&hl=ko)
 - **Boogie**
   - The movie community website, made with Django and Vue
-  - [Boogie Website Link](https://boogiee-site.netlify.app)
+  - [Boogie Website Link](https://boogie-movie.site/)
   - [Boogie Github Repository](https://github.com/Byongho96/boogie-project)
 - **KioKio**
   - The student in-body management kiosk program, made with Django and Vue
