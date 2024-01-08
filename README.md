@@ -4,8 +4,8 @@
 
 <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=Git&logoColor=white"/> <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=MySQL&logoColor=white"/> <img src="https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=Nginx&logoColor=white"/> <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=Docker&logoColor=white"/>
 
-![Solved.ac프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=arkddkwl2029)
+![solved.ac 뱃지 프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=arkddkwl2029)
 
 - **[TIL Blog](https://byongho96.github.io/TIL/)**
 - **[My First Project](https://play.google.com/store/apps/details?id=com.DefaultCompany.BattlewithFriends&hl=ko)**
-- **[My First Website](https://boogie-movie.site/)**
+- **[My First Package](https://www.npmjs.com/package/react-responsive-3d-carousel)**
