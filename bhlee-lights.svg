@@ -1,0 +1,112 @@
+<svg viewBox="0 0 800 300" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&amp;display=swap');
+
+      /* 더 어둡고 모던해진 대비감 있는 쿨그레이 배경 */
+      rect.bg { fill: #a3a9b8; }
+
+      /* 1. 꺼져있을 때의 기본 글자 (음각 효과) */
+      .letter-base {
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        font-size: 72px;
+        fill: #a3a9b8; 
+        text-anchor: middle;
+        filter: url(#inset-shadow); 
+      }
+
+      /* 2. 켜졌을 때의 빛나는 글자 */
+      .letter-glow {
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        font-size: 72px;
+        fill: #ffffff; 
+        text-anchor: middle;
+        filter: drop-shadow(0px -5px 15px rgba(255, 255, 255, 0.9)) drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.6));
+        animation: textGlow 5s infinite ease-in-out;
+        opacity: 0; 
+      }
+
+      /* 3. 조명 기구 */
+      .light-bulb {
+        animation: bulbGlow 5s infinite ease-in-out;
+      }
+
+      /* 텍스트 발광 애니메이션 */
+      @keyframes textGlow {
+        0%, 100% { opacity: 0; }
+        5%, 25% { opacity: 1; } 
+        45% { opacity: 0; } 
+      }
+
+      /* 조명 기구 애니메이션 */
+      @keyframes bulbGlow {
+        0%, 100% { 
+          fill: #bcc1ce; 
+          filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.25)); 
+        }
+        5%, 25% { 
+          fill: #7d8392; 
+          filter: drop-shadow(0px -10px 12px rgba(255, 255, 255, 1)) drop-shadow(0px -2px 4px rgba(255, 255, 255, 0.8));
+        }
+        45% { 
+          fill: #bcc1ce; 
+          filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.25));
+        }
+      }
+
+      /* 차례대로 켜지도록 딜레이 부여 (글자가 5개로 줄어 간격 조정) */
+      .d1 .letter-glow, .d1 .light-bulb { animation-delay: 0.0s; }
+      .d2 .letter-glow, .d2 .light-bulb { animation-delay: 0.2s; }
+      .d3 .letter-glow, .d3 .light-bulb { animation-delay: 0.4s; }
+      .d4 .letter-glow, .d4 .light-bulb { animation-delay: 0.6s; }
+      .d5 .letter-glow, .d5 .light-bulb { animation-delay: 0.8s; }
+    </style>
+
+    <filter id="inset-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feOffset dx="0" dy="4"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur" result="inverse"/>
+      <feFlood flood-color="#000000" flood-opacity="0.35" result="color"/>
+      <feComposite operator="in" in="color" in2="inverse" result="shadow"/>
+      <feComposite operator="over" in="shadow" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+
+  <rect class="bg" width="100%" height="100%" rx="15" />
+
+  <g transform="translate(400, 0)">
+    
+    <g class="group d1" transform="translate(-160, 0)">
+      <text x="0" y="160" class="letter-base">B</text>
+      <text x="0" y="160" class="letter-glow">B</text>
+      <circle cx="0" cy="200" r="5" class="light-bulb" />
+    </g>
+    
+    <g class="group d2" transform="translate(-80, 0)">
+      <text x="0" y="160" class="letter-base">H</text>
+      <text x="0" y="160" class="letter-glow">H</text>
+      <circle cx="0" cy="200" r="5" class="light-bulb" />
+    </g>
+    
+    <g class="group d3" transform="translate(0, 0)">
+      <text x="0" y="160" class="letter-base">L</text>
+      <text x="0" y="160" class="letter-glow">L</text>
+      <circle cx="0" cy="200" r="5" class="light-bulb" />
+    </g>
+    
+    <g class="group d4" transform="translate(80, 0)">
+      <text x="0" y="160" class="letter-base">E</text>
+      <text x="0" y="160" class="letter-glow">E</text>
+      <circle cx="0" cy="200" r="5" class="light-bulb" />
+    </g>
+    
+    <g class="group d5" transform="translate(160, 0)">
+      <text x="0" y="160" class="letter-base">E</text>
+      <text x="0" y="160" class="letter-glow">E</text>
+      <circle cx="0" cy="200" r="5" class="light-bulb" />
+    </g>
+    
+  </g>
+</svg>
